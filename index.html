@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commission Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Commission Hub</div>
+    <span class="pill">Sale-based rewards</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">REFERRAL DASHBOARD</p>
+        <h1>Turn genuine referrals into commissions.</h1>
+        <p class="muted">Earn only when a referred customer completes an eligible product or service purchase.</p>
+        <button id="copyBtn" class="primary">Copy my referral link</button>
+        <small id="copyStatus"></small>
+      </div>
+      <div class="hero-card">
+        <span>Your referral code</span>
+        <strong>MONU369</strong>
+        <code id="refLink">https://example.com/?ref=MONU369</code>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="card"><span>Eligible sales</span><b>₹12,500</b></div>
+      <div class="card"><span>Commission earned</span><b>₹625</b></div>
+      <div class="card"><span>Pending</span><b>₹125</b></div>
+      <div class="card"><span>Available</span><b>₹500</b></div>
+    </section>
+
+    <section class="grid">
+      <div class="panel">
+        <div class="panel-head"><h2>Products</h2><span>5% demo commission</span></div>
+        <div id="products"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>Recent commissions</h2></div>
+        <div class="transaction"><span>Order #1004</span><b>+₹250</b><small>Verified sale</small></div>
+        <div class="transaction"><span>Order #1001</span><b>+₹375</b><small>Verified sale</small></div>
+      </div>
+    </section>
+
+    <section class="panel admin">
+      <div class="panel-head"><h2>Admin demo</h2><span>Prototype only</span></div>
+      <p class="muted">Verify sales, approve commissions, review withdrawal requests and manage products.</p>
+      <div class="admin-actions">
+        <button>Verify sales</button>
+        <button>Commission rules</button>
+        <button>Withdrawals</button>
+      </div>
+    </section>
+
+    <footer>Prototype • No recruitment-based payouts • Add backend/KYC/payment controls before launch</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
